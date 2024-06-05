@@ -47,6 +47,7 @@ ur:
     returns: واپسی
     deprecated: فرسودہ
     deprecation_details: فرسودگی کی تفصیلات
+    blank_allowed: خالی اجازت ہے
   date:
     day_names:
     - اتوار
@@ -300,12 +301,9 @@ ur:
           data_format: 'ڈیٹا فارمیٹ: %{valid_text}۔'
           keep_order: چابیاں کی ترتیب رکھیں
           key_pattern: کلیدی پیٹرن کے لحاظ سے فلٹر کریں (جیسے 'عام۔*')
-          key_pattern_to_rename: نام تبدیل کرنے کے لیے مکمل کلید (پیٹرن)۔ درکار ہے۔
           locale_to_translate_from: جس سے ترجمہ کرنا ہے۔
           locales_filter: 'کارروائی کرنے کے لیے مقامی (زبانیں)۔ خاص: بنیاد'
           missing_types: 'اقسام کے لحاظ سے فلٹر کریں: %{valid}'
-          new_key_name: نیا نام، اصل نام کو %{key} کے طور پر اکٹھا کرتا ہے۔ درکار
-            ہے۔
           nostdin: stdin سے نہ پڑھیں
           out_format: 'آؤٹ پٹ فارمیٹ: %{valid_text}'
           pattern_router: 'پیٹرن راؤٹر استعمال کریں: کنفیگریشن ڈیٹا ڈاٹ رائٹ کے مطابق
@@ -348,6 +346,7 @@ ur:
         tree_subtract: درخت A مائنس درخت B میں چابیاں
         tree_translate: Google Translate a tree to root locales
         unused: غیر استعمال شدہ ترجمے دکھائیں۔
+        cp: لوکل ڈیٹا میں کیز کاپی کریں جو دیے گئے پیٹرن سے ملتی ہیں۔
       encourage:
       - بہت اعلی!
       - بہت اچھے!
@@ -799,6 +798,8 @@ ur:
       use_separators: جداکاروں کا استعمال کریں۔
       use_titlecase: ٹائٹل کیس استعمال کریں۔
       vowels: سر
+    navbar:
+      edit_policy: پالیسی
   audit_logs:
     audit_log:
       created: بنایا
@@ -1025,6 +1026,8 @@ ur:
       status: حالت
       views: مناظر
       views_remaining: مناظر باقی ہیں۔
+      active: فعال
+      expired: میعاد ختم
     minute:
       one: 1 منٹ
       other: "%{count} منٹ"
@@ -1058,6 +1061,16 @@ ur:
       will_expire_after: اس پش کی میعاد ختم ہو جاتی ہے۔
       with_preliminary_step: اس میں %{strong_start}1-کلک ابتدائی بازیافت کا مرحلہ%{strong_end}
         بھی شامل ہے۔
+      example: مثال
+      generate: پیدا کریں۔
+      include_id: ID شامل کریں۔
+      message_example: براہ کرم یقینی بنائیں کہ حساس معلومات کی حفاظت اور رازداری
+        کو برقرار رکھنے کے لیے یہ دستاویز بازیافت کے بعد محفوظ طریقے سے تباہ ہو گئی
+        ہے۔
+      message_placeholder: اختیاری حسب ضرورت پیغام
+      print_and_share: پرنٹ کریں اور شیئر کریں۔
+      print_and_share_tip: آخری صارفین کے لیے ایک قابل پرنٹ صفحہ بنائیں
+      show_expiration: میعاد ختم ہونے کی تفصیلات دکھائیں۔
     provide_text_or_file: پش بنانے کے لیے، آپ کو یا تو متن فراہم کرنا چاہیے، فائل
       منسلک کرنا چاہیے، یا دونوں۔
     push:
@@ -1374,3 +1387,11 @@ ur:
         استعمال کیا جاسکتا ہے۔ کچھ خیالات کے لیے ذیل کی مثالیں دیکھیں۔
       tools_5: مزید وضاحت اور مثالیں %{github} ویکی میں دیکھیں۔
       walkthrough: واک تھرو اور مثالیں۔
+  zero_minutes: 0 منٹ
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: رازداری کی پالیسی
+      terms_of_service:
+        terms_of_service: سروس کی شرائط
+  confirmation_go: اپنے اکاؤنٹ کی تصدیق کے لیے یہاں کلک کریں۔

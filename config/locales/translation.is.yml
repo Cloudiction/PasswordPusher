@@ -45,6 +45,7 @@ is:
     returns: Skilar
     deprecated: Úrelt
     deprecation_details: Upplýsingar um afskrift
+    blank_allowed: autt leyfilegt
   date:
     day_names:
     - sunnudaginn
@@ -297,11 +298,9 @@ is:
           data_format: 'Gagnasnið: %{valid_text}.'
           keep_order: Haltu röð lykla
           key_pattern: Sía eftir lyklumynstri (td 'common.*')
-          key_pattern_to_rename: Fullur lykill (mynstur) til að endurnefna. Áskilið
           locale_to_translate_from: Staður til að þýða frá
           locales_filter: 'Staðsetning(ir) til að vinna úr. Sérstök: grunnur'
           missing_types: 'Sía eftir gerðum: %{valid}'
-          new_key_name: Nýtt nafn, skýtur inn upprunalegu nafni sem %{key}. Áskilið
           nostdin: Ekki lesa úr stdin
           out_format: 'Úttakssnið: %{valid_text}'
           pattern_router: 'Notaðu mynsturbeini: lyklar færðir í hverja stillingu data.write'
@@ -343,6 +342,7 @@ is:
         tree_subtract: tré A að frádregnum lyklunum í tré B
         tree_translate: Google þýða tré yfir á rótarstað
         unused: sýna ónotaðar þýðingar
+        cp: afritaðu lyklana í staðsetningargögnum sem passa við uppgefið mynstur
       encourage:
       - Gott starf!
       - Vel gert!
@@ -780,6 +780,8 @@ is:
       use_separators: Notaðu skiljur
       use_titlecase: Notaðu Titlecase
       vowels: Sérhljóðar
+    navbar:
+      edit_policy: Stefna
   audit_logs:
     audit_log:
       created: Búið til
@@ -1001,6 +1003,8 @@ is:
       status: Staða
       views: Útsýni
       views_remaining: Útsýni eftir
+      active: Virkur
+      expired: Útrunnið
     minute:
       one: 1 mínúta
       other: "%{count} mínútur"
@@ -1033,6 +1037,16 @@ is:
       will_burn_view: "(mun brenna útsýni)"
       will_expire_after: Þessi ýta rennur út eftir
       with_preliminary_step: Það felur einnig í sér %{strong_start}1-smellur bráðabirgðasókn%{strong_end}.
+      example: Dæmi
+      generate: Mynda
+      include_id: Láttu auðkenni fylgja með
+      message_example: Vinsamlegast tryggðu að þessu skjali sé eytt á öruggan hátt
+        eftir að það hefur verið sótt til að vernda viðkvæmar upplýsingar og viðhalda
+        trúnaði.
+      message_placeholder: Valfrjálst sérsniðin skilaboð
+      print_and_share: Prenta og deila
+      print_and_share_tip: Búðu til prentvæna síðu fyrir notendur
+      show_expiration: Sýna upplýsingar um gildistíma
     provide_text_or_file: Til að búa til ýtt verður þú annað hvort að gefa upp texta,
       hengja skrá eða hvort tveggja.
     push:
@@ -1338,3 +1352,11 @@ is:
         sem er. Sjáðu dæmin hér að neðan fyrir nokkrar hugmyndir.
       tools_5: Sjá nánari skýringar og dæmi í %{github} Wiki.
       walkthrough: Leiðsögn og dæmi
+  zero_minutes: 0 mínútur
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: Friðhelgisstefna
+      terms_of_service:
+        terms_of_service: Skilmálar þjónustu
+  confirmation_go: Smelltu hér til að staðfesta reikninginn þinn

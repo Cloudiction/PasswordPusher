@@ -463,6 +463,7 @@ lv:
         sunset_at: Saulriets plkst
         info: Informācija
     returns: Atgriežas
+    blank_allowed: tukšs atļauts
   i18n_tasks:
     add_missing:
       added:
@@ -479,12 +480,9 @@ lv:
           data_format: 'Datu formāts: %{valid_text}.'
           keep_order: Ievērojiet atslēgu secību
           key_pattern: Filtrēt pēc atslēgas modeļa (piem., "parasti.*")
-          key_pattern_to_rename: Pilna atslēga (raksts), ko pārdēvēt. Obligāti
           locale_to_translate_from: Tulkošanas vieta
           locales_filter: 'Apstrādājamā(-ās) lokalizācija(-as). Īpašs: bāze'
           missing_types: 'Filtrēt pēc veidiem: %{valid}'
-          new_key_name: Jauns nosaukums, interpolē sākotnējo nosaukumu kā %{key}.
-            Obligāti
           nostdin: Nelasīt no stdin
           out_format: 'Izvades formāts: %{valid_text}'
           pattern_router: 'Izmantot šablonu maršrutētāju: taustiņi pārvietoti pēc
@@ -527,6 +525,7 @@ lv:
         tree_subtract: koks A mīnus atslēgas kokā B
         tree_translate: Google tulkotājs koku saknes lokalizācijām
         unused: parādīt neizmantotos tulkojumus
+        cp: kopējiet atslēgas lokalizācijas datos, kas atbilst dotajam modelim
       encourage:
       - Labs darbs!
       - Labi padarīts!
@@ -802,6 +801,8 @@ lv:
       use_separators: Izmantot atdalītājus
       use_titlecase: Izmantot Virsraksta stilu
       vowels: Patskaņi
+    navbar:
+      edit_policy: Politika
   audit_logs:
     audit_log:
       created: Izveidots
@@ -1028,6 +1029,8 @@ lv:
       status: Statuss
       views: Skatījumi
       views_remaining: Atlikušie skati
+      active: Aktīvs
+      expired: Beidzies derīguma termiņš
     minute:
       one: 1 minūte
       other: "%{count} minūtes"
@@ -1061,6 +1064,15 @@ lv:
       will_expire_after: Šis paziņojums beidzas
       with_preliminary_step: Tajā ir iekļauta arī %{strong_start} viena klikšķa sākotnējās
         izguves darbība %{strong_end}.
+      example: Piemērs
+      generate: Ģenerēt
+      include_id: Iekļaut ID
+      message_example: Lūdzu, nodrošiniet, lai šis dokuments pēc izgūšanas tiktu droši
+        iznīcināts, lai aizsargātu sensitīvu informāciju un saglabātu konfidencialitāti.
+      message_placeholder: Pēc izvēles pielāgota ziņa
+      print_and_share: Drukāt un kopīgot
+      print_and_share_tip: Izveidojiet drukājamu lapu galalietotājiem
+      show_expiration: Rādīt informāciju par derīguma termiņu
     provide_text_or_file: Lai izveidotu push, jums ir jāiesniedz teksts, jāpievieno
       fails vai abi.
     push:
@@ -1371,3 +1383,11 @@ lv:
         Skatiet zemāk sniegtos piemērus.
       tools_5: Skatiet vairāk skaidrojumu un piemērus %{github} Wiki.
       walkthrough: Caurskate un piemēri
+  zero_minutes: 0 minūtes
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: Privātuma politika
+      terms_of_service:
+        terms_of_service: Pakalpojuma noteikumi
+  confirmation_go: Noklikšķiniet šeit, lai apstiprinātu savu kontu

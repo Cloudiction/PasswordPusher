@@ -47,6 +47,7 @@ hi:
     returns: रिटर्न
     deprecated: पदावनत
     deprecation_details: बहिष्करण विवरण
+    blank_allowed: रिक्त अनुमत
   date:
     day_names:
     - रविवार
@@ -303,12 +304,9 @@ hi:
           data_format: 'डेटा प्रारूप: %{valid_text}।'
           keep_order: चाबियों का क्रम बनाए रखें
           key_pattern: कुंजी पैटर्न के आधार पर फ़िल्टर करें (जैसे 'सामान्य.*')
-          key_pattern_to_rename: नाम बदलने के लिए पूर्ण कुंजी (पैटर्न)। आवश्यक
           locale_to_translate_from: अनुवाद करने के लिए स्थान
           locales_filter: 'संसाधित करने के लिए स्थान। विशेष: आधार'
           missing_types: 'प्रकार के अनुसार फ़िल्टर करें: %{valid}'
-          new_key_name: नया नाम, मूल नाम को %{key} के रूप में प्रक्षेपित करता है।
-            आवश्यक
           nostdin: stdin से मत पढ़ो
           out_format: 'आउटपुट स्वरूप: %{valid_text}'
           pattern_router: 'पैटर्न राउटर का उपयोग करें: कुंजियाँ प्रति कॉन्फ़िगरेशन
@@ -353,6 +351,8 @@ hi:
         tree_subtract: वृक्ष A से वृक्ष B की कुंजियाँ घटाएँ
         tree_translate: Google किसी पेड़ का मूल स्थानों में अनुवाद करता है
         unused: अप्रयुक्त अनुवाद दिखाएं
+        cp: स्थानीय डेटा में उन कुंजियों की प्रतिलिपि बनाएँ जो दिए गए पैटर्न से मेल
+          खाती हैं
       encourage:
       - अच्छी नौकरी!
       - बहुत अच्छा!
@@ -799,6 +799,8 @@ hi:
       use_separators: विभाजक का प्रयोग करें
       use_titlecase: टाइटलकेस का प्रयोग करें
       vowels: स्वर वर्ण
+    navbar:
+      edit_policy: नीति
   audit_logs:
     audit_log:
       created: बनाया था
@@ -1022,6 +1024,8 @@ hi:
       status: स्थिति
       views: दृश्य
       views_remaining: दृश्य शेष
+      active: सक्रिय
+      expired: खत्म हो चुका
     minute:
       one: 1 मिनट
       other: "%{count} मिनट"
@@ -1055,6 +1059,16 @@ hi:
       will_expire_after: यह पुश अंदर समाप्त हो जाता है
       with_preliminary_step: इसमें एक %{strong_start}1-क्लिक प्रारंभिक पुनर्प्राप्ति
         चरण %{strong_end} भी शामिल है।
+      example: उदाहरण
+      generate: उत्पन्न
+      include_id: आईडी शामिल करें
+      message_example: कृपया सुनिश्चित करें कि संवेदनशील जानकारी की सुरक्षा और गोपनीयता
+        बनाए रखने के लिए इस दस्तावेज़ को पुनः प्राप्ति के बाद सुरक्षित रूप से नष्ट
+        कर दिया जाए।
+      message_placeholder: वैकल्पिक कस्टम संदेश
+      print_and_share: प्रिंट करें और साझा करें
+      print_and_share_tip: अंतिम उपयोगकर्ताओं के लिए प्रिंट करने योग्य पृष्ठ बनाएं
+      show_expiration: समाप्ति विवरण दिखाएं
     provide_text_or_file: पुश बनाने के लिए, आपको या तो टेक्स्ट प्रदान करना होगा, फ़ाइल
       संलग्न करनी होगी, या दोनों।
     push:
@@ -1372,3 +1386,11 @@ hi:
         देखें।
       tools_5: "%{github} विकी में अधिक स्पष्टीकरण और उदाहरण देखें।"
       walkthrough: पूर्वाभ्यास और उदाहरण
+  zero_minutes: 0 मिनट
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: गोपनीयता नीति
+      terms_of_service:
+        terms_of_service: सेवा की शर्तें
+  confirmation_go: अपना खाता पुष्टि करने के लिए यहां क्लिक करें

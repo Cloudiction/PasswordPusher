@@ -458,6 +458,7 @@ fr:
         sunset_at: Coucher de soleil à
         info: Info
     returns: Retour
+    blank_allowed: espace vide autorisé
   i18n_tasks:
     add_missing:
       added:
@@ -474,11 +475,9 @@ fr:
           data_format: 'Format des données : %{valid_text}.'
           keep_order: Gardez l'ordre des clés
           key_pattern: Filtrer par modèle de clé (par exemple 'common.*')
-          key_pattern_to_rename: Clé complète (motif) à renommer. Requis
           locale_to_translate_from: Paramètres régionaux à partir desquels traduire
           locales_filter: 'Paramètres régionaux à traiter. Spécial : base'
           missing_types: 'Filtrer par types : %{valid}'
-          new_key_name: Nouveau nom, interpole le nom d'origine comme %{key}. Requis
           nostdin: Ne pas lire depuis stdin
           out_format: 'Format de sortie : %{valid_text}'
           pattern_router: 'Use pattern router : clés déplacées par config data.write'
@@ -525,6 +524,7 @@ fr:
         tree_subtract: arbre A moins les clés de l'arbre B
         tree_translate: Google traduit un arbre en paramètres régionaux racine
         unused: afficher les traductions inutilisées
+        cp: copier les clés dans les données locales qui correspondent au modèle donné
       encourage:
       - Bon travail!
       - Bien joué!
@@ -811,6 +811,8 @@ fr:
       use_separators: Utiliser des séparateurs
       use_titlecase: Tenir compte de la casse
       vowels: Voyelles
+    navbar:
+      edit_policy: Politique
   audit_logs:
     audit_log:
       created: Créé(e) le
@@ -1014,7 +1016,7 @@ fr:
         pour voir cette publication.
       password_tip: 'Astuce : saisissez uniquement un mot de passe dans la case. D''autres
         informations d''identification peuvent compromettre la sécurité.'
-      payload_placeholder: Entrez le mot de passe, le texte ou l'URL pour pousser...
+      payload_placeholder: Entrez le mot de passe, le texte ou l'URL à publier ...
       push_it: Publier !
       upload_limit: Vous pouvez télécharger jusqu'à 10 fichiers par push.
       view: Voir
@@ -1039,6 +1041,8 @@ fr:
       status: Statut
       views: Vues
       views_remaining: Vues restantes
+      active: Actif
+      expired: Expiré
     minute:
       one: 1 minute
       other: "%{count} minutes"
@@ -1073,6 +1077,16 @@ fr:
       will_expire_after: Ce push expire dans
       with_preliminary_step: Il comprend également une étape de récupération préliminaire
         %{strong_start} en 1 clic %{strong_end}.
+      example: Exemple
+      generate: Générer
+      include_id: Inclure l'identifiant
+      message_example: Veuillez vous assurer que ce document est détruit en toute
+        sécurité après sa récupération afin de protéger les informations sensibles
+        et de maintenir la confidentialité.
+      message_placeholder: Message personnalisé facultatif
+      print_and_share: Imprimer et partager
+      print_and_share_tip: Générer une page imprimable pour les utilisateurs finaux
+      show_expiration: Afficher les détails d'expiration
     provide_text_or_file: Pour créer un push, vous devez soit fournir du texte, soit
       joindre un fichier, soit les deux.
     push:
@@ -1403,3 +1417,11 @@ fr:
         de programmation. Regardez les exemples plus bas pour vous en inspirer.
       tools_5: Voir plus d'explications et d'exemples dans le wiki %{github}.
       walkthrough: Procédure et exemples
+  zero_minutes: 0 minutes
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: politique de confidentialité
+      terms_of_service:
+        terms_of_service: Conditions d'utilisation
+  confirmation_go: Cliquez ici pour confirmer votre compte

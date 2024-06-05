@@ -447,6 +447,7 @@ pl:
         sunset_at: Zachód słońca o godz
         info: Informacje
     returns: Zwroty
+    blank_allowed: puste dozwolone
   i18n_tasks:
     add_missing:
       added:
@@ -463,11 +464,9 @@ pl:
           data_format: 'Format danych: %{valid_text}.'
           keep_order: Zachowaj kolejność kluczy
           key_pattern: Filtruj według wzorca klucza (np. „wspólne.*”)
-          key_pattern_to_rename: Pełny klucz (wzór) do zmiany nazwy. Wymagany
           locale_to_translate_from: Język do tłumaczenia
           locales_filter: 'Ustawienia regionalne do przetworzenia. Specjalne: baza'
           missing_types: 'Filtruj według typów: %{valid}'
-          new_key_name: Nowa nazwa, interpoluje pierwotną nazwę jako %{key}. Wymagany
           nostdin: Nie czytaj ze standardowego wejścia
           out_format: 'Format wyjściowy: %{valid_text}'
           pattern_router: 'Użyj routera wzorca: klucze przeniesione na dane konfiguracyjne.write'
@@ -510,6 +509,7 @@ pl:
         tree_subtract: drzewo A minus klawisze w drzewie B
         tree_translate: Przetłumacz Google drzewo na główne ustawienia regionalne
         unused: pokaż nieużywane tłumaczenia
+        cp: skopiuj klucze z danych regionalnych, które pasują do podanego wzorca
       encourage:
       - Dobra robota!
       - Bardzo dobrze!
@@ -786,6 +786,8 @@ pl:
       use_separators: Użyj separatorów
       use_titlecase: Użyj wielkich liter
       vowels: Samogłoski
+    navbar:
+      edit_policy: Polityka
   audit_logs:
     audit_log:
       created: Utworzono
@@ -1009,6 +1011,8 @@ pl:
       status: Status
       views: Wyświetlenia
       views_remaining: Pozostało wyświetleń
+      active: Aktywne
+      expired: Wygasłe
     minute:
       one: 1 minuta
       other: "%{count} minut"
@@ -1042,6 +1046,15 @@ pl:
       will_expire_after: To push wygasa za
       with_preliminary_step: Zawiera także %{strong_start}etap wstępnego pobierania
         jednym kliknięciem%{strong_end}.
+      example: Przykład
+      generate: Generować
+      include_id: Dołącz identyfikator
+      message_example: Prosimy upewnić się, że niniejszy dokument zostanie bezpiecznie
+        zniszczony po odzyskaniu, aby chronić poufne informacje i zachować poufność.
+      message_placeholder: Opcjonalna wiadomość niestandardowa
+      print_and_share: Drukuj i udostępniaj
+      print_and_share_tip: Wygeneruj stronę do wydrukowania dla użytkowników końcowych
+      show_expiration: Pokaż szczegóły wygaśnięcia
     provide_text_or_file: Aby utworzyć push, musisz podać tekst, załączyć plik lub
       jedno i drugie.
     push:
@@ -1360,3 +1373,11 @@ pl:
         kilka pomysłów.
       tools_5: Więcej wyjaśnień i przykładów znajdziesz na Wiki %{github}.
       walkthrough: Przykłady
+  zero_minutes: 0 minut
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: Polityka prywatności
+      terms_of_service:
+        terms_of_service: Warunki usługi
+  confirmation_go: Kliknij tutaj, aby potwierdzić swoje konto

@@ -4,7 +4,7 @@ name: Docker Container Builds
 on:
   push:
     tags:
-      - "release"
+      - "stable"
       - "v*.*.*"
 
   workflow_dispatch:
@@ -38,15 +38,12 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ secrets.DOCKER_USERNAME }}/pwpush
-          flavor: |
-            latest=false
           tags: |
-            type=match,pattern=release
-            type=schedule,pattern=latest
+            type=match,pattern=stable
+            type=schedule,pattern=nightly
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
-            type=semver,pattern=latest
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
@@ -65,4 +62,3 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache
           cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache,mode=max,ignore-error=${{env.DOCKER_PUSH == 'false'}}
-

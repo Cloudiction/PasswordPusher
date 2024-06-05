@@ -445,6 +445,7 @@
         sunset_at: Solnedgang kl
         info: Info
     returns: Returnerer
+    blank_allowed: blank tillatt
   i18n_tasks:
     add_missing:
       added:
@@ -461,11 +462,9 @@
           data_format: 'Dataformat: %{valid_text}.'
           keep_order: Hold rekkefølgen på nøklene
           key_pattern: Filtrer etter nøkkelmønster (f.eks. 'common.*')
-          key_pattern_to_rename: Full nøkkel (mønster) for å gi nytt navn. Obligatorisk
           locale_to_translate_from: Sted å oversette fra
           locales_filter: 'Språk(er) som skal behandles. Spesiell: base'
           missing_types: 'Filtrer etter typer: %{valid}'
-          new_key_name: Nytt navn, interpolerer opprinnelig navn som %{key}. Obligatorisk
           nostdin: Ikke les fra stdin
           out_format: 'Utdataformat: %{valid_text}'
           pattern_router: 'Bruk mønsterruter: nøkler flyttet per config data.write'
@@ -507,6 +506,7 @@
         tree_subtract: tre A minus nøklene i tre B
         tree_translate: Google Oversett et tre til rotlokaliteter
         unused: vis ubrukte oversettelser
+        cp: kopier nøklene i lokalitetsdata som samsvarer med det gitte mønsteret
       encourage:
       - Godt jobbet!
       - Bra gjort!
@@ -782,6 +782,8 @@
       use_separators: Bruk delere
       use_titlecase: Bruk tittelsak
       vowels: Vokaler
+    navbar:
+      edit_policy: Politikk
   audit_logs:
     audit_log:
       created: Opprettet
@@ -1004,6 +1006,8 @@
       status: Status
       views: Visninger
       views_remaining: Gjenstående visninger
+      active: Aktiv
+      expired: Utløpt
     minute:
       one: 1 minutt
       other: "%{count} minutter"
@@ -1037,6 +1041,15 @@
       will_expire_after: Denne push utløper om
       with_preliminary_step: Den inkluderer også et %{strong_start}1-klikks foreløpig
         gjenfinningstrinn%{strong_end}.
+      example: Eksempel
+      generate: generere
+      include_id: Inkluder ID
+      message_example: Vennligst sørg for at dette dokumentet er sikkert destruert
+        etter henting for å beskytte sensitiv informasjon og opprettholde konfidensialitet.
+      message_placeholder: Valgfri egendefinert melding
+      print_and_share: Skriv ut og del
+      print_and_share_tip: Generer en utskrivbar side for sluttbrukere
+      show_expiration: Vis utløpsdetaljer
     provide_text_or_file: For å lage en push må du enten gi tekst, legge ved en fil
       eller begge deler.
     push:
@@ -1342,3 +1355,11 @@
         programmeringsspråk. Se eksemplene nedenfor for noen ideer.
       tools_5: Se mer forklaring og eksempler i %{github} Wiki.
       walkthrough: Gjennomgang og eksempler
+  zero_minutes: 0 minutter
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: Personvernerklæring
+      terms_of_service:
+        terms_of_service: Vilkår for bruk
+  confirmation_go: Klikk her for å bekrefte kontoen din

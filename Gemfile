@@ -95,9 +95,10 @@ gem "puma"
 gem "rollbar"
 gem "simple_token_authentication"
 gem "kaminari", "~> 1.2"
+gem "invisible_captcha", "~> 2.3"
 
 gem "devise-i18n"
-gem "i18n-tasks", "~> 1.0.13" # , group: :development
+gem "i18n-tasks", "~> 1.0.14" # , group: :development
 gem "rails-i18n", "~> 7.0.9"
 gem "route_translator", ">= 13.0.0"
 gem "translation"
@@ -105,7 +106,7 @@ gem "translation"
 # For File Uploads
 gem "aws-sdk-s3", require: false
 gem "azure-storage-blob", "~> 2.0", require: false
-gem "google-cloud-storage", "~> 1.49", require: false
+gem "google-cloud-storage", "~> 1.52", require: false
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
@@ -123,3 +124,5 @@ end
 gem "version", git: "https://github.com/pglombardo/version.git", branch: "master"
 
 gem "administrate", "~> 0.20.1"
+
+gem "rqrcode", "~> 2.2"

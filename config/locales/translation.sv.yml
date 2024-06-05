@@ -448,6 +448,7 @@ sv:
         sunset_at: Solnedgång kl
         info: Info
     returns: Returnerar
+    blank_allowed: tomt tillåtet
   i18n_tasks:
     add_missing:
       added:
@@ -464,11 +465,9 @@ sv:
           data_format: 'Dataformat: %{valid_text}.'
           keep_order: Håll ordning på nycklarna
           key_pattern: Filtrera efter nyckelmönster (t.ex. 'common.*')
-          key_pattern_to_rename: Fullständig nyckel (mönster) för att byta namn. Nödvändig
           locale_to_translate_from: Språk att översätta från
           locales_filter: 'Plats(er) att bearbeta. Special: bas'
           missing_types: 'Filtrera efter typer: %{valid}'
-          new_key_name: Nytt namn, interpolerar originalnamnet som %{key}. Nödvändig
           nostdin: Läs inte från stdin
           out_format: 'Utdataformat: %{valid_text}'
           pattern_router: 'Använd mönsterrouter: nycklar flyttade per config data.write'
@@ -508,6 +507,7 @@ sv:
         tree_subtract: träd A minus nycklarna i träd B
         tree_translate: Google Översätt ett träd till root-lokaler
         unused: visa oanvända översättningar
+        cp: kopiera nycklarna i lokaldata som matchar det givna mönstret
       encourage:
       - Bra jobbat!
       - Bra gjort!
@@ -788,6 +788,8 @@ sv:
       use_separators: Använd separatorer
       use_titlecase: Använd Versalisering
       vowels: Vokaler
+    navbar:
+      edit_policy: Politik
   audit_logs:
     audit_log:
       created: Skapad
@@ -1012,6 +1014,8 @@ sv:
       status: Status
       views: Visningar
       views_remaining: Återstående vyer
+      active: Aktiv
+      expired: Utgånget
     minute:
       one: 1 minut
       other: "%{count} minuter"
@@ -1045,6 +1049,15 @@ sv:
       will_expire_after: Denna push löper ut om
       with_preliminary_step: Den innehåller också ett %{strong_start}1-klicks preliminärt
         hämtningssteg%{strong_end}.
+      example: Exempel
+      generate: Generera
+      include_id: Inkludera ID
+      message_example: Se till att detta dokument förstörs på ett säkert sätt efter
+        hämtning för att skydda känslig information och upprätthålla konfidentialitet.
+      message_placeholder: Valfritt anpassat meddelande
+      print_and_share: Skriv ut och dela
+      print_and_share_tip: Skapa en utskrivbar sida för slutanvändare
+      show_expiration: Visa utgångsinformation
     provide_text_or_file: För att skapa en push måste du antingen tillhandahålla text,
       bifoga en fil eller båda.
     push:
@@ -1352,3 +1365,11 @@ sv:
         Se exemplen nedan för några idéer.
       tools_5: Se mer förklaring och exempel i %{github} Wiki.
       walkthrough: Genomgång & exempel
+  zero_minutes: 0 minuter
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: Integritetspolicy
+      terms_of_service:
+        terms_of_service: Användarvillkor
+  confirmation_go: Klicka här för att bekräfta ditt konto

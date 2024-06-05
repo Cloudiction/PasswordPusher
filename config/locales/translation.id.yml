@@ -46,6 +46,7 @@ id:
     returns: Pengembalian
     deprecated: Ditinggalkan
     deprecation_details: Rincian penghentian penggunaan
+    blank_allowed: kosong diperbolehkan
   date:
     day_names:
     - Minggu
@@ -304,12 +305,9 @@ id:
           data_format: 'Format data: %{valid_text}.'
           keep_order: Pertahankan urutan tombol
           key_pattern: Filter berdasarkan pola kunci (misalnya 'common.*')
-          key_pattern_to_rename: Tombol penuh (pola) untuk mengganti nama. Wajib diisi
           locale_to_translate_from: Lokasi untuk menerjemahkan dari
           locales_filter: 'Lokasi yang akan diproses. Khusus: dasar'
           missing_types: 'Saring berdasarkan jenis: %{valid}'
-          new_key_name: Nama baru, menginterpolasi nama asli sebagai %{key}. Wajib
-            diisi
           nostdin: Jangan membaca dari stdin
           out_format: 'Format keluaran: %{valid_text}'
           pattern_router: 'Gunakan router pola: kunci dipindahkan per konfigurasi
@@ -353,6 +351,7 @@ id:
         tree_subtract: pohon A dikurangi kunci di pohon B
         tree_translate: Google Menerjemahkan pohon ke lokasi akar
         unused: menampilkan terjemahan yang tidak digunakan
+        cp: menyalin kunci dalam data lokal yang cocok dengan pola yang diberikan
       encourage:
       - Kerja bagus!
       - Bagus sekali!
@@ -796,6 +795,8 @@ id:
       use_separators: Gunakan Pemisah
       use_titlecase: Gunakan Titlecase
       vowels: Vokal
+    navbar:
+      edit_policy: Kebijakan
   audit_logs:
     audit_log:
       created: Dibuat
@@ -1021,6 +1022,8 @@ id:
       status: Status
       views: Tampilan
       views_remaining: Tampilan yang tersisa
+      active: Aktif
+      expired: Kadaluarsa
     minute:
       one: 1 menit
       other: "%{count} menit"
@@ -1054,6 +1057,15 @@ id:
       will_expire_after: Dorongan ini akan kedaluwarsa dalam
       with_preliminary_step: Ini juga mencakup langkah pengambilan awal 1-klik %{strong_start}
         %{strong_end}.
+      example: Contoh
+      generate: Menghasilkan
+      include_id: Sertakan ID
+      message_example: Harap pastikan bahwa dokumen ini dimusnahkan dengan aman setelah
+        diambil untuk melindungi informasi sensitif dan menjaga kerahasiaannya.
+      message_placeholder: Pesan Khusus Opsional
+      print_and_share: Cetak & Bagikan
+      print_and_share_tip: Hasilkan Halaman yang Dapat Dicetak untuk Pengguna Akhir
+      show_expiration: Tampilkan Detail Kedaluwarsa
     provide_text_or_file: Untuk membuat push, Anda harus menyediakan teks, melampirkan
       file, atau keduanya.
     push:
@@ -1381,3 +1393,11 @@ id:
         ide.
       tools_5: Lihat penjelasan dan contoh lebih lanjut di Wiki %{github}.
       walkthrough: Panduan & Contoh
+  zero_minutes: 0 menit
+  users:
+    agreements:
+      privacy_policy:
+        privacy_policy: Kebijakan Privasi
+      terms_of_service:
+        terms_of_service: Ketentuan Layanan
+  confirmation_go: Klik di sini untuk mengonfirmasi akun Anda
